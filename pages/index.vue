@@ -3,7 +3,7 @@
     <!-- Navbar -->
     <Navbar />
     <!-- Hero -->
-    <!-- <Hero /> -->
+    <Hero />
   </header>
   <section></section>
   <footer></footer>

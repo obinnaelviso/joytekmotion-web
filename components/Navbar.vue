@@ -44,41 +44,47 @@ const menuLinks = [
       <li>
         <a
           href="#"
+          target="_blank"
           class="text-gray-500 transition-colors ease-in-out duration-500 hover:text-black"
           ><Icon name="uil:github"
         /></a>
       </li>
       <li>
         <a
-          href="#"
+          href="https://facebook.com/joytekmotion"
+          target="_blank"
           class="text-gray-500 transition-colors ease-in-out duration-500 hover:text-blue-600"
           ><Icon name="uil:facebook-f"
         /></a>
       </li>
       <li>
         <a
-          href="#"
+          href="https://linkedin.com/company/joytekmotion"
+          target="_blank"
           class="text-gray-500 hover:text-sky-700 transition-colors ease-in-out duration-500"
           ><Icon name="uil:linkedin"
         /></a>
       </li>
       <li>
         <a
-          href="#"
+          href="https://twitter.com/joytekmotion"
+          target="_blank"
           class="text-gray-500 hover:text-sky-400 transition-colors ease-in-out duration-600"
           ><Icon name="uil:twitter"
         /></a>
       </li>
       <li>
         <a
-          href="#"
+          href="https://upwork.com/freelancers/~013e0288cb1c5abc47"
+          target="_blank"
           class="text-gray-500 hover:text-green-500 transition-colors ease-in-out duration-500"
           ><Icon name="cib:upwork"
         /></a>
       </li>
       <li>
         <a
-          href="#"
+          href="https://fiverr.com/obinnaelviso"
+          target="_blank"
           class="text-gray-500 hover:text-green-600 transition-colors ease-in-out duration-500"
           ><Icon name="jam:fiverr"
         /></a>
