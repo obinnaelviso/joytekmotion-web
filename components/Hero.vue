@@ -41,11 +41,9 @@
             professional, we have the expertise and experience to help you find
             the perfect match.
           </div>
-          <button
-            class="bg-purple-500 text-white font-bold py-2 px-4 rounded border border-transparent hover:border-purple-500 focus:border-purple-500 active:border-purple-700 transition duration-300 ease-in-out"
-          >
+          <Button>
             Get Started {{ slide }}
-          </button>
+          </Button>
         </div>
       </div>
     </SwiperSlide>
