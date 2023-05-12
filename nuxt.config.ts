@@ -1,7 +1,8 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   css: ["~/assets/css/main.css"],
-  modules: ["nuxt-icon", "nuxt-swiper"],
+  modules: ["nuxt-icon", "nuxt-swiper", "@nuxt/image-edge"],
+  image: {},
   postcss: {
     plugins: {
       tailwindcss: {},

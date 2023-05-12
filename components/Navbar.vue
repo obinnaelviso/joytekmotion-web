@@ -26,7 +26,7 @@ const menuLinks = [
 <template>
   <nav class="w-100 px-16 py-2 flex justify-between items-center border-b">
     <!-- Logo -->
-    <img src="~/assets/images/logo.png" alt="joytekmotion-logo" width="68" />
+    <img src="/images/logo.png" alt="joytekmotion-logo" width="68" />
     <!-- Menu -->
     <ul class="flex gap-4">
       <li v-for="menuLink in menuLinks" :key="menuLink.name">

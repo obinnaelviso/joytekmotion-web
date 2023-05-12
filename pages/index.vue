@@ -3,7 +3,8 @@
     <!-- Navbar -->
     <Navbar />
     <!-- Hero -->
-    <Hero />
+    <HomeHero />
+    <HomeStack />
   </header>
   <section></section>
   <footer></footer>
