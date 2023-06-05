@@ -26,7 +26,7 @@ const menuLinks = [
 <template>
   <nav class="w-100 px-16 py-2 flex justify-between items-center border-b">
     <!-- Logo -->
-    <img src="/images/logo.png" alt="joytekmotion-logo" width="68" />
+    <img src="@/assets/images/logo.png" alt="joytekmotion-logo" class="w-16" />
     <!-- Menu -->
     <ul class="flex gap-4">
       <li v-for="menuLink in menuLinks" :key="menuLink.name">
@@ -53,7 +53,7 @@ const menuLinks = [
         <a
           href="https://facebook.com/joytekmotion"
           target="_blank"
-          class="text-gray-500 transition-colors ease-in-out duration-500 hover:text-blue-600"
+          class="text-gray-500 transition-colors ease-in-out duration-500 hover:text-blue-500"
           ><Icon name="uil:facebook-f"
         /></a>
       </li>

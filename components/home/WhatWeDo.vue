@@ -3,11 +3,7 @@
     <SectionTitle>What We Do</SectionTitle>
     <div class="grid grid-cols-2">
       <div class="flex flex-col text-center m-2 p-4 gap-2">
-        <nuxt-img
-          src="/images/home/programming.png"
-          class="mx-auto"
-          height="96"
-        ></nuxt-img>
+        <img src="@/assets/images/home/programming.png" class="mx-auto w-20" />
         <h3 class="text-xl font-bold">Websites and API Backend</h3>
         <p>
           Do need a website or an API Backend to fire up that web/mobile app?
@@ -19,11 +15,7 @@
       <div
         class="flex flex-col text-center m-2 border gap-2 border-purple-500 p-4"
       >
-        <nuxt-img
-          src="/images/home/mobile-app.png"
-          class="mx-auto"
-          height="96"
-        ></nuxt-img>
+        <img src="@/assets/images/home/mobile-app.png" class="mx-auto w-20" />
         <h3 class="text-xl font-bold">Mobile Application Development</h3>
         <p>
           Are you looking to build a mobile app for your business? We've got
@@ -35,11 +27,7 @@
       <div
         class="flex flex-col text-center m-2 border gap-2 p-4 border-purple-500"
       >
-        <nuxt-img
-          src="/images/home/computer.png"
-          class="mx-auto"
-          height="96"
-        ></nuxt-img>
+        <img src="@/assets/images/home/computer.png" class="mx-auto w-20" />
         <h3 class="text-xl font-bold">
           Hosting and Cloud Server Infrastructure
         </h3>
@@ -52,11 +40,7 @@
         </p>
       </div>
       <div class="flex flex-col text-center m-2 gap-2 p-4">
-        <nuxt-img
-          src="/images/home/monitoring.png"
-          class="mx-auto"
-          height="96"
-        ></nuxt-img>
+        <img src="@/assets/images/home/monitoring.png" class="mx-auto w-20" />
         <h3 class="text-xl font-bold">Backup, Maintenance and Modification</h3>
         <p>
           We help you maintain your website or app and also modify it to add

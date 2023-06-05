@@ -1,0 +1,105 @@
+<script lang="ts" setup>
+const currentYear = new Date().getFullYear();
+</script>
+<template>
+  <section class="border-t border-t-purple-500 py-10">
+    <Container>
+      <div class="grid grid-cols-12 gap-3">
+        <div class="col-span-3">
+          <img src="@/assets/images/logo.png" class="w-24 h-24" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+            repellendus blanditiis eveniet quasi non similique, vero harum eos
+            voluptatum et.
+          </p>
+        </div>
+        <div class="col-span-5">
+          <Heading type="h3" name="Quick Links" class="mb-5" />
+          <div class="flex">
+            <ul class="flex flex-col gap-1 flex-1">
+              <li>
+                <TextLink name="Features" url="#">Features</TextLink>
+              </li>
+              <li>
+                <TextLink name="Docs" url="#">Docs</TextLink>
+              </li>
+              <li>
+                <TextLink name="Download" url="#" />
+              </li>
+              <li>
+                <TextLink name="Support" url="#" />
+              </li>
+            </ul>
+            <ul class="flex flex-col gap-1 flex-1">
+              <li>
+                <TextLink name="Features" url="#">Features</TextLink>
+              </li>
+              <li>
+                <TextLink name="Docs" url="#">Docs</TextLink>
+              </li>
+              <li>
+                <TextLink name="Download" url="#" />
+              </li>
+              <li>
+                <TextLink name="Support" url="#" />
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-span-4">
+          <Heading type="h3" name="Subscribe to Our Newsletter" class="mb-5" />
+          <p class="mb-5">
+            To get the latest news and updates from us please subscribe your
+            email.
+          </p>
+          <form action="#" class="flex mb-3">
+            <FormInput type="email" placeholder="Enter your email" />
+            <Button type="submit" class="ml-2"> Subscribe </Button>
+          </form>
+
+          <!-- Social icons -->
+          <ul class="flex gap-3">
+            <li>
+              <a
+                href="#"
+                target="_blank"
+                class="text-black"
+                ><Icon name="uil:github"
+              /></a>
+            </li>
+            <li>
+              <a
+                href="https://facebook.com/joytekmotion"
+                target="_blank"
+                class="text-blue-500"
+                ><Icon name="uil:facebook-f"
+              /></a>
+            </li>
+            <li>
+              <a
+                href="https://linkedin.com/company/joytekmotion"
+                target="_blank"
+                class="text-sky-700"
+                ><Icon name="uil:linkedin"
+              /></a>
+            </li>
+            <li>
+              <a
+                href="https://twitter.com/joytekmotion"
+                target="_blank"
+                class="text-sky-400"
+                ><Icon name="uil:twitter"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr class="my-5" />
+      <div class="text-gray-500 text-center text-sm">
+        &copy; 2020 - {{ currentYear }}
+        <span class="text-purple-700">JoyTEK Motion LTD</span>. All rights
+        reserved.
+      </div>
+    </Container>
+  </section>
+</template>
