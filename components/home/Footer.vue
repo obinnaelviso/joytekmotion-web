@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 const currentYear = new Date().getFullYear();
+const { companyName } = useRuntimeConfig().public;
 </script>
 <template>
   <section class="border-t border-t-purple-500 py-10">
@@ -60,10 +61,7 @@ const currentYear = new Date().getFullYear();
           <!-- Social icons -->
           <ul class="flex gap-3">
             <li>
-              <a
-                href="#"
-                target="_blank"
-                class="text-black"
+              <a href="#" target="_blank" class="text-black"
                 ><Icon name="uil:github"
               /></a>
             </li>
@@ -97,7 +95,7 @@ const currentYear = new Date().getFullYear();
       <hr class="my-5" />
       <div class="text-gray-500 text-center text-sm">
         &copy; 2020 - {{ currentYear }}
-        <span class="text-purple-700">JoyTEK Motion LTD</span>. All rights
+        <span class="text-purple-700">{{ companyName }}</span>. All rights
         reserved.
       </div>
     </Container>

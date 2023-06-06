@@ -1,14 +1,17 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   css: ["~/assets/css/main.css"],
-  modules: [
-    "nuxt-icon",
-    "nuxt-swiper",
-  ],
+  modules: ["nuxt-icon", "nuxt-swiper"],
   postcss: {
     plugins: {
       tailwindcss: {},
       autoprefixer: {},
     },
   },
+  runtimeConfig: {
+    public: {
+      appName: '',
+      companyName: ''
+    }
+  }
 });
