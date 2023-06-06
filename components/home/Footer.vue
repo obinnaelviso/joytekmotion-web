@@ -52,7 +52,7 @@ const { companyName } = useRuntimeConfig().public;
           <p class="mb-5">
             Subscribe, to get the latest news and updates from us.
           </p>
-          <form action="#" class="laptop:flex laptop:flex-row mb-3">
+          <form action="#" class="flex laptop:flex-row mb-3 flex-col">
             <FormInput type="email" placeholder="Enter your email" class="laptop:mb-0 mb-3" />
             <Button type="submit" class="laptop:ml-2"> Subscribe </Button>
           </form>
