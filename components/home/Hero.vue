@@ -21,30 +21,21 @@
     }"
   >
     <SwiperSlide v-for="slide in 2" :key="slide">
-      <div class="h-[75vh] relative">
+      <div class="h-[35vh] laptop:h-[75vh] relative">
         <img
           src="https://wallpapercave.com/wp/wp2944455.jpg"
           class="object-cover w-full h-full absolute top-0 left-0 -z-10"
         />
         <!-- image overlay -->
-        <div class="absolute inset-0 bg-black opacity-60"></div>
+        <div class="absolute inset-0 bg-black opacity-70"></div>
         <!-- Center -->
         <div
           class="absolute text-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center"
         >
-          <h1 class="text-4xl font-bold mb-4">
+          <h1 class="text-2xl laptop:text-4xl tablet:text-3xl font-bold mb-5">
             Find the Perfect Freelance Talent for Your Projects
           </h1>
-          <div class="text-xl text-gray-200 mb-12">
-            Welcome to our freelancing platform, where you can find top-quality
-            freelance talent for all your project needs. Whether you need a
-            designer, developer, writer, marketer, or any other skilled
-            professional, we have the expertise and experience to help you find
-            the perfect match.
-          </div>
-          <Button>
-            Get Started {{ slide }}
-          </Button>
+          <!-- <Button> Get Started {{ slide }} </Button> -->
         </div>
       </div>
     </SwiperSlide>

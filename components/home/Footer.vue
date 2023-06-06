@@ -5,8 +5,8 @@ const { companyName } = useRuntimeConfig().public;
 <template>
   <section class="border-t border-t-purple-500 py-10">
     <Container>
-      <div class="grid grid-cols-12 gap-3">
-        <div class="col-span-3">
+      <div class="grid grid-cols-12 tablet:gap-3 gap-5">
+        <div class="tablet:col-span-3 col-span-12 hidden tablet:block">
           <img src="@/assets/images/logo.png" class="w-24 h-24" />
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
@@ -14,7 +14,7 @@ const { companyName } = useRuntimeConfig().public;
             voluptatum et.
           </p>
         </div>
-        <div class="col-span-5">
+        <div class="tablet:col-span-5 col-span-12">
           <Heading type="h3" name="Quick Links" class="mb-5" />
           <div class="flex">
             <ul class="flex flex-col gap-1 flex-1">
@@ -47,15 +47,14 @@ const { companyName } = useRuntimeConfig().public;
             </ul>
           </div>
         </div>
-        <div class="col-span-4">
+        <div class="tablet:col-span-4 col-span-12 hidden tablet:block">
           <Heading type="h3" name="Subscribe to Our Newsletter" class="mb-5" />
           <p class="mb-5">
-            To get the latest news and updates from us please subscribe your
-            email.
+            Subscribe, to get the latest news and updates from us.
           </p>
-          <form action="#" class="flex mb-3">
-            <FormInput type="email" placeholder="Enter your email" />
-            <Button type="submit" class="ml-2"> Subscribe </Button>
+          <form action="#" class="laptop:flex laptop:flex-row mb-3">
+            <FormInput type="email" placeholder="Enter your email" class="laptop:mb-0 mb-3" />
+            <Button type="submit" class="laptop:ml-2"> Subscribe </Button>
           </form>
 
           <!-- Social icons -->

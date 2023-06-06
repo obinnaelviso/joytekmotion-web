@@ -1,7 +1,7 @@
 <template>
   <section>
     <SectionTitle>What We Do</SectionTitle>
-    <div class="grid grid-cols-2">
+    <div class="grid grid-cols-1 tablet:grid-cols-2">
       <div class="flex flex-col text-center m-2 p-4 gap-2">
         <img src="@/assets/images/home/programming.png" class="mx-auto w-20" />
         <h3 class="text-xl font-bold">Websites and API Backend</h3>
