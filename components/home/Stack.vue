@@ -1,5 +1,5 @@
 <template>
-  <section class="px-10 py-5">
+  <section class="px-10 pt-5">
     <h3 class="text-2xl font-bold text-center mb-2">Our Stack</h3>
     <Swiper
       :modules="[SwiperAutoplay]"
@@ -26,7 +26,7 @@
         <img
           src="@/assets/images/slider/stack/github.png"
           alt="github logo"
-          class="h-24 m-auto"
+          class="h-28 m-auto"
           height="90"
         />
       </SwiperSlide>
@@ -34,14 +34,14 @@
         <img
           src="@/assets/images/slider/stack/java.png"
           alt="java logo"
-          class="h-24 m-auto"
+          class="h-32 m-auto"
         />
       </SwiperSlide>
       <SwiperSlide>
         <img
           src="@/assets/images/slider/stack/php.png"
           alt="php logo"
-          class="h-24 m-auto"
+          class="h-32 m-auto"
         />
       </SwiperSlide>
       <SwiperSlide>
@@ -115,7 +115,7 @@
         <img
           src="@/assets/images/slider/stack/nodejs.png"
           alt="nodejs logo"
-          class="h-24 m-auto"
+          class="h-32 m-auto"
         />
       </SwiperSlide>
       <SwiperSlide>
@@ -129,7 +129,7 @@
         <img
           src="@/assets/images/slider/stack/digitalocean.png"
           alt="digitalocean logo"
-          class="h-24 m-auto"
+          class="h-32 m-auto"
         />
       </SwiperSlide>
       <SwiperSlide>
@@ -151,14 +151,14 @@
         <img
           src="@/assets/images/slider/stack/mongodb.png"
           alt="mongodb logo"
-          class="h-24 m-auto"
+          class="h-32 m-auto"
         />
       </SwiperSlide>
       <SwiperSlide>
         <img
           src="@/assets/images/slider/stack/nextjs.png"
           alt="nextjs logo"
-          class="h-24 m-auto"
+          class="h-28 m-auto"
           height="90"
         />
       </SwiperSlide>
@@ -166,7 +166,7 @@
         <img
           src="@/assets/images/slider/stack/spring-boot.png"
           alt="spring boot logo"
-          class="h-24 m-auto"
+          class="h-32 m-auto"
         />
       </SwiperSlide>
       <SwiperSlide>
