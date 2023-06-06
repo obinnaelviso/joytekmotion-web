@@ -47,7 +47,7 @@ const { companyName } = useRuntimeConfig().public;
             </ul>
           </div>
         </div>
-        <div class="tablet:col-span-4 col-span-12 hidden tablet:block">
+        <div class="tablet:col-span-4 col-span-12">
           <Heading type="h3" name="Subscribe to Our Newsletter" class="mb-5" />
           <p class="mb-5">
             Subscribe, to get the latest news and updates from us.
