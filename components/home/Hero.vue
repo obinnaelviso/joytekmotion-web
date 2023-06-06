@@ -20,7 +20,7 @@
       },
     }"
   >
-    <SwiperSlide v-for="slide in 5" :key="slide">
+    <SwiperSlide v-for="slide in 2" :key="slide">
       <div class="h-[75vh] relative">
         <img
           src="https://wallpapercave.com/wp/wp2944455.jpg"
