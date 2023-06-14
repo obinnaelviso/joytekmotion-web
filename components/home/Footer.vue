@@ -18,13 +18,10 @@ const { companyName } = useRuntimeConfig().public;
           <div class="flex">
             <ul class="flex flex-col gap-1 flex-1">
               <li>
-                <TextLink name="Features" url="#">Features</TextLink>
+                <TextLink name="Services" url="#"/>
               </li>
               <li>
-                <TextLink name="Docs" url="#">Docs</TextLink>
-              </li>
-              <li>
-                <TextLink name="Download" url="#" />
+                <TextLink name="About Us" url="#"/>
               </li>
               <li>
                 <TextLink name="Support" url="#" />
@@ -32,13 +29,10 @@ const { companyName } = useRuntimeConfig().public;
             </ul>
             <ul class="flex flex-col gap-1 flex-1">
               <li>
-                <TextLink name="Features" url="#">Features</TextLink>
+                <TextLink name="Services" url="#"/>
               </li>
               <li>
-                <TextLink name="Docs" url="#">Docs</TextLink>
-              </li>
-              <li>
-                <TextLink name="Download" url="#" />
+                <TextLink name="About Us" url="#"/>
               </li>
               <li>
                 <TextLink name="Support" url="#" />
