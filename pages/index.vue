@@ -7,5 +7,4 @@
     <HomeWhatWeDo />
     <HomeContactUs />
   </Container>
-  <HomeWhoIsBehindThis />
 </template>

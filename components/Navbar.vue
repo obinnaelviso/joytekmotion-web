@@ -1,55 +1,47 @@
 <script setup lang="ts">
 const menuLinks = [
   {
-    name: "Features",
+    name: "Services",
     url: "#",
   },
   {
-    name: "Downloads",
-    url: "#",
-  },
-  {
-    name: "Docs",
+    name: "About Us",
     url: "#",
   },
   {
     name: "Support",
     url: "#",
   },
-  {
-    name: "Blog",
-    url: "#",
-  },
 ];
 const socialIcons = [
   {
     icon: "uil:github",
-    url: "#",
+    url: "https://github.com/obinnaelviso",
     class: ["hover:text-black"],
   },
   {
     icon: "uil:facebook-f",
-    url: "#",
+    url: "https://facebook.com/joytekmotion",
     class: ["hover:text-blue-500"],
   },
   {
     icon: "uil:linkedin",
-    url: "#",
+    url: "https://linkedin.com/company/joytekmotion",
     class: ["hover:text-sky-700"],
   },
   {
     icon: "uil:twitter",
-    url: "#",
+    url: "https://twitter.com/joytekmotion",
     class: ["hover:text-sky-400"],
   },
   {
     icon: "cib:upwork",
-    url: "#",
+    url: "https://www.upwork.com/freelancers/~013e0288cb1c5abc47",
     class: ["hover:text-green-500"],
   },
   {
     icon: "jam:fiverr",
-    url: "#",
+    url: "https://fiverr.com/obinnaelviso",
     class: ["hover:text-green-600"],
   },
 ];

@@ -26,6 +26,11 @@ const form = reactive({
       class="p-10 tablet:border-y border-b border-x tablet:border-l-0 border-r border-purple-700 tablet:rounded-tr-xl rounded-br-xl rounded-bl-xl tablet:rounded-bl-none"
     >
       <form class="flex flex-col gap-5">
+        <div class="tablet:text-left text-center text-lg">
+          <Icon name="uil:whatsapp" class="mb-2 text-green-500" size="48"/>
+          <div class="font-bold">Say Hi to us on Whatsapp at:</div>
+          <TextLink url="https://wa.link/lz09jr" name="+234 802 697 8647" target="_black"/>
+        </div>
         <FormInputGroup class="tablet:text-left text-center">
           <FormLabel id="name" title="Name" />
           <FormInput for="name" />

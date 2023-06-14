@@ -9,9 +9,8 @@ const { companyName } = useRuntimeConfig().public;
         <div class="tablet:col-span-3 col-span-12 hidden tablet:block">
           <img src="@/assets/images/logo.png" class="w-24 h-24" />
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-            repellendus blanditiis eveniet quasi non similique, vero harum eos
-            voluptatum et.
+            We turn that big idea of yours into websites, apps, startups,
+            scripts, infrastructures, services and more.
           </p>
         </div>
         <div class="tablet:col-span-5 col-span-12">
@@ -53,14 +52,21 @@ const { companyName } = useRuntimeConfig().public;
             Subscribe, to get the latest news and updates from us.
           </p>
           <form action="#" class="flex laptop:flex-row mb-3 flex-col">
-            <FormInput type="email" placeholder="Enter your email" class="laptop:mb-0 mb-3" />
+            <FormInput
+              type="email"
+              placeholder="Enter your email"
+              class="laptop:mb-0 mb-3"
+            />
             <Button type="submit" class="laptop:ml-2"> Subscribe </Button>
           </form>
 
           <!-- Social icons -->
           <ul class="flex gap-3">
             <li>
-              <a href="#" target="_blank" class="text-black"
+              <a
+                href="https://github.com/obinnaelviso"
+                target="_blank"
+                class="text-black"
                 ><Icon name="uil:github"
               /></a>
             </li>
@@ -88,14 +94,22 @@ const { companyName } = useRuntimeConfig().public;
                 ><Icon name="uil:twitter"
               /></a>
             </li>
+            <li>
+              <a
+                href="https://wa.link/lz09jr"
+                target="_blank"
+                class="text-green-500"
+                ><Icon name="uil:whatsapp"
+              /></a>
+            </li>
           </ul>
         </div>
       </div>
       <hr class="my-5" />
       <div class="text-gray-500 text-center text-sm">
         &copy; 2020 - {{ currentYear }}
-        <span class="text-purple-700">{{ companyName }}</span>. All rights
-        reserved.
+        <span class="text-purple-700">{{ companyName }}</span
+        >. All rights reserved.
       </div>
     </Container>
   </section>
