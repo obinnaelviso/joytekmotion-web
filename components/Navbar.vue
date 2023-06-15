@@ -68,11 +68,12 @@ const menuClasses = computed(() => {
       class="w-100 px-16 py-2 flex justify-between items-center border-b bg-white relative z-10"
     >
       <!-- Logo -->
-      <img
-        src="@/assets/images/logo.png"
-        alt="joytekmotion-logo"
-        class="w-16"
-      />
+      <NuxtLink to="/">
+        <img
+          src="@/assets/images/logo.png"
+          alt="joytekmotion-logo"
+          class="w-16"
+      /></NuxtLink>
       <!-- Menu -->
       <ul class="hidden tablet:flex gap-4">
         <li v-for="menuLink in menuLinks" :key="menuLink.name">

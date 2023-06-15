@@ -1,8 +1,21 @@
 <script lang="ts" setup>
+import logo from "@/assets/images/logo.png"
 const { appName } = useRuntimeConfig().public;
 useHead({
   titleTemplate: (title?: string) =>
     !title ? `Welcome to ${appName}` : `${title} - ${appName}`,
+  meta: [
+    { name: "author", content: "Okechukwu Obinna Elvis" },
+    {
+      name: "description",
+      content: `We are a community of freelancers who build and manage websites, mobile and desktop applications at an affordable rate.`,
+    },
+    {
+      name: "keywords",
+      content: "Affordable freelancing, mobile app developers, freelance web designers, freelance software developers, affordable website development"
+    }, 
+    {property: "og:image", content: logo}
+  ],
 });
 </script>
 <template>
