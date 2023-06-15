@@ -111,7 +111,7 @@ const menuClasses = computed(() => {
         >
           <a
             href="#"
-            class="py-3 inline-block border-b-2 border-transparent hover:bg-purple-700 hover:text-white transition duration-300 ease-in-out w-100"
+            class="py-3 inline-block font-bold border-b-2 border-transparent hover:bg-purple-700 hover:text-white transition duration-300 ease-in-out w-100"
           >
             {{ menuLink.name }}
           </a>
