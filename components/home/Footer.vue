@@ -18,7 +18,7 @@ const { companyName } = useRuntimeConfig().public;
           <div class="flex">
             <ul class="flex flex-col gap-1 flex-1">
               <li>
-                <TextLink name="Services" url="#"/>
+                <TextLink name="Services" url="/services"/>
               </li>
               <li>
                 <TextLink name="About Us" url="#"/>

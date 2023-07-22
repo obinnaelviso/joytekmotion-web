@@ -1,8 +1,9 @@
 <script setup lang="ts">
+const route = useRoute();
 const menuLinks = [
   {
     name: "Services",
-    url: "#",
+    url: "/services",
   },
   {
     name: "About Us",
@@ -77,12 +78,17 @@ const menuClasses = computed(() => {
       <!-- Menu -->
       <ul class="hidden tablet:flex gap-4">
         <li v-for="menuLink in menuLinks" :key="menuLink.name">
-          <a
-            href="#"
-            class="inline-block border-b-2 border-transparent hover:border-purple-700 hover:text-purple-700 transition duration-300 ease-in-out"
+          <NuxtLink
+            :to="menuLink.url"
+            class="inline-block"
+            :class="
+              menuLink.url === route.path
+                ? 'border-purple-700 text-purple-700 border-b-2'
+                : ' border-b-2 border-transparent hover:border-purple-700 hover:text-purple-700 transition duration-300 ease-in-out'
+            "
           >
             {{ menuLink.name }}
-          </a>
+          </NuxtLink>
         </li>
       </ul>
       <!-- Social icons -->
@@ -110,12 +116,12 @@ const menuClasses = computed(() => {
           :key="menuLink.name"
           class="border-b flex flex-col"
         >
-          <a
-            href="#"
+          <NuxtLink
+            :to="menuLink.url"
             class="py-3 inline-block font-bold border-b-2 border-transparent hover:bg-purple-700 hover:text-white transition duration-300 ease-in-out w-100"
           >
             {{ menuLink.name }}
-          </a>
+          </NuxtLink>
         </li>
       </ul>
       <!-- Social icons -->
