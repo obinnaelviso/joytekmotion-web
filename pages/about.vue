@@ -33,7 +33,7 @@ useHead({
           services of excellence to you.
         </p>
       </div>
-  
+
       <!-- Section Let's Dive Deeper -->
       <div class="my-20">
         <SectionTitle class="mb-5">Let's Dive Deeper</SectionTitle>
@@ -41,19 +41,19 @@ useHead({
           <img :src="logo" alt="joytek motion logo" class="mx-auto" />
           <div class="col-span-2 flex flex-col gap-3 text-gray-500">
             <p>
-              Joytek Motion was founded in 2017 with a vision to develop software
-              solutions for business and also solve problems in the society. Since
-              then we've engaged in building websites, mobile applications and
-              deploying on freelancing platforms such as Upwork and Fiverr. We had
-              our first website in wordpress and blog in 2020 which was later
-              shutdown for upgrade in 2021.
+              Joytek Motion was founded in 2017 with a vision to develop
+              software solutions for business and also solve problems in the
+              society. Since then we've engaged in building websites, mobile
+              applications and deploying on freelancing platforms such as Upwork
+              and Fiverr. We had our first website in wordpress and blog in 2020
+              which was later shutdown for upgrade in 2021.
             </p>
             <p>
-              We had our first project in 2020 where we helped a client figure out
-              a solution to a problem he had on his website. He has contracted
-              same job to other freelancers before us but all to no avail. But
-              with our skill and extraordinary insight, we delivered the job and
-              he was happy.
+              We had our first project in 2020 where we helped a client figure
+              out a solution to a problem he had on his website. He has
+              contracted same job to other freelancers before us but all to no
+              avail. But with our skill and extraordinary insight, we delivered
+              the job and he was happy.
             </p>
             <p>
               We were registered on February 1, 2022 and we began operations
@@ -66,15 +66,16 @@ useHead({
           </div>
         </div>
       </div>
-  
+
       <!-- Section Follow Us On Our Social Media -->
       <div class="my-20 text-center">
         <SectionTitle>Follow Us On Social Media</SectionTitle>
-        <Heading
-          type="h4"
-          class="mb-5"
-          name="To find out more on what we're up to, tap any of the icons below <br> to follow us on any of our social media handle today <br> @joytekmotion"
-        />
+        <Heading type="h4" class="mb-5"
+          >To find out more on what we're up to, tap any of the icons below
+          <br />
+          to follow us on any of our social media handle today <br />
+          @joytekmotion</Heading
+        >
         <!-- Social icons -->
         <ul class="flex gap-3 justify-center">
           <li>
