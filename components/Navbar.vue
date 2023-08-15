@@ -2,16 +2,16 @@
 const route = useRoute();
 const menuLinks = [
   {
+    name: "Home",
+    url: "/",
+  },
+  {
     name: "Services",
     url: "/services",
   },
   {
     name: "About Us",
-    url: "#",
-  },
-  {
-    name: "Support",
-    url: "#",
+    url: "/about",
   },
 ];
 const socialIcons = [

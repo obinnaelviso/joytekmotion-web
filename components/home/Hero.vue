@@ -6,7 +6,7 @@ const slides = [
   {
     image: freelanceBgImg,
     image_alt: "laptop with monitor",
-    title: "We have a <span class='text-orange-300'>community of freelancers</span> who work together to get the job done.",
+    title: "We are a <span class='text-orange-300'>community of freelancers</span> who work together to get the job done.",
     id: 0,
   },
   {

@@ -5,7 +5,7 @@ const { companyName } = useRuntimeConfig().public;
 <template>
   <section class="border-t border-t-purple-500 py-10">
     <Container>
-      <div class="grid grid-cols-12 tablet:gap-3 gap-5">
+      <div class="grid grid-cols-12 gap-5">
         <div class="tablet:col-span-3 col-span-12 hidden tablet:block">
           <img src="@/assets/images/logo.png" class="w-24 h-24" />
           <p>
@@ -18,24 +18,10 @@ const { companyName } = useRuntimeConfig().public;
           <div class="flex">
             <ul class="flex flex-col gap-1 flex-1">
               <li>
-                <TextLink name="Services" url="/services"/>
+                <TextLink name="Services" url="/services" />
               </li>
               <li>
-                <TextLink name="About Us" url="#"/>
-              </li>
-              <li>
-                <TextLink name="Support" url="#" />
-              </li>
-            </ul>
-            <ul class="flex flex-col gap-1 flex-1">
-              <li>
-                <TextLink name="Services" url="#"/>
-              </li>
-              <li>
-                <TextLink name="About Us" url="#"/>
-              </li>
-              <li>
-                <TextLink name="Support" url="#" />
+                <TextLink name="About Us" url="/about" />
               </li>
             </ul>
           </div>
@@ -58,14 +44,6 @@ const { companyName } = useRuntimeConfig().public;
           <ul class="flex gap-3">
             <li>
               <a
-                href="https://github.com/obinnaelviso"
-                target="_blank"
-                class="text-black"
-                ><Icon name="uil:github"
-              /></a>
-            </li>
-            <li>
-              <a
                 href="https://facebook.com/joytekmotion"
                 target="_blank"
                 class="text-blue-500"
@@ -86,6 +64,14 @@ const { companyName } = useRuntimeConfig().public;
                 target="_blank"
                 class="text-sky-400"
                 ><Icon name="uil:twitter"
+              /></a>
+            </li>
+            <li>
+              <a
+                href="https://instagram.com/joytekmotion"
+                target="_blank"
+                class="text-pink-600"
+                ><Icon name="uil:instagram"
               /></a>
             </li>
             <li>

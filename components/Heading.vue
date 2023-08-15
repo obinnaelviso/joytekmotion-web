@@ -22,5 +22,5 @@ const headingClasses = computed(() => {
 </script>
 
 <template>
-  <component :is="type" :class="headingClasses">{{ name }}</component>
+  <component :is="type" :class="headingClasses" v-html="name" />
 </template>

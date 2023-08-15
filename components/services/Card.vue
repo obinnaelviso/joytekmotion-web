@@ -14,13 +14,13 @@ const { title, servicesList, action } = defineProps({
       :name="title"
       class="border-b border-gray-400 text-gray-700 pb-5 mb-5"
     />
-    <div>
-      <ul class="list-disc text-purple-700 flex flex-col gap-3">
-        <li v-for="(serviceList, index) in servicesList" :key="index">
-          <span class="text-gray-700">{{ serviceList }}</span>
-        </li>
-      </ul>
-    </div>
+      <div>
+        <ul class="list-disc text-purple-700 flex flex-col gap-3">
+          <li v-for="(serviceList, index) in servicesList" :key="index">
+            <span class="text-gray-700">{{ serviceList }}</span>
+          </li>
+        </ul>
+      </div>
     <TextLink v-if="action" to="#" class="absolute bottom-5 right-5" name="Learn More" />
   </div>
 </template>

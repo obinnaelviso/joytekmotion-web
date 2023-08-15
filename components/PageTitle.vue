@@ -1,7 +1,8 @@
 <script lang="ts" setup>
-const {title, backgroundImage} = defineProps({
+const {title, backgroundImage, description} = defineProps({
   title: String,
-  backgroundImage: String
+  backgroundImage: String,
+  description: String
 })
 </script>
 <template>
@@ -12,7 +13,7 @@ const {title, backgroundImage} = defineProps({
     <!-- Center -->
     <div class="absolute bottom-5 left-5">
       <Heading type="h1" :name="title" class="text-white"/>
-      <p class="text-gray-300">How to become a centimental person</p>
+      <p class="text-gray-300">{{ description }}</p>
     </div>
   </div>
 </template>

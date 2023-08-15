@@ -19,14 +19,16 @@ useHead({
 });
 </script>
 <template>
-  <header>
-    <!-- Navbar -->
-    <Navbar />
-  </header>
-  <!-- container mx-auto px-4 sm:px-6 lg:px-8 -->
-  <main>
-    <!-- Hero -->
-    <slot />
-    <HomeFooter />
-  </main>
+  <div>
+    <header>
+      <!-- Navbar -->
+      <Navbar />
+    </header>
+    <!-- container mx-auto px-4 sm:px-6 lg:px-8 -->
+    <main>
+      <!-- Hero -->
+      <slot />
+      <HomeFooter />
+    </main>
+  </div>
 </template>
