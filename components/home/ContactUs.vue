@@ -1,9 +1,41 @@
 <script lang="ts" setup>
-const form = reactive({
-  name: "",
-  email: "",
-  subject: "",
-  message: "",
+import { object, string } from "yup";
+const contactFormSchema = object({
+  name: string().required().label("Name"),
+  email: string().required().email().label("Email Address"),
+  subject: string().required().label("Subject"),
+  message: string().required().label("Message"),
+});
+const { handleSubmit } = useForm({
+  validationSchema: toTypedSchema(contactFormSchema)
+});
+
+type ContactFormErrors = {
+  name: string[];
+  email: string[];
+  subject: string[];
+  message: string[];
+};
+
+const toast = useToast();
+const apiErrors = useState<ContactFormErrors | null>();
+const onSubmit = handleSubmit(async (values) => {
+  apiErrors.value = null;
+  const data = await $fetch("http://joytekmotion-api.test/api/v1/contact-us", {
+    method: "POST",
+    body: values,
+    async onResponse({ response }) {
+      if (response.status === 422) {
+        apiErrors.value = response._data.errors;
+        toast.add({
+          title: "Error",
+          description: response._data.message,
+          color: "red",
+          
+        });
+      }
+    },
+  });
 });
 </script>
 <template>
@@ -25,28 +57,37 @@ const form = reactive({
     <div
       class="p-10 tablet:border-y border-b border-x tablet:border-l-0 border-r border-purple-700 tablet:rounded-tr-xl rounded-br-xl rounded-bl-xl tablet:rounded-bl-none"
     >
-      <form class="flex flex-col gap-5">
+      <form class="flex flex-col gap-5" novalidate @submit="onSubmit">
         <div class="tablet:text-left text-center text-lg">
-          <Icon name="uil:whatsapp" class="mb-2 text-green-500" size="48"/>
+          <Icon name="uil:whatsapp" class="mb-2 text-green-500" size="48" />
           <div class="font-bold">Say Hi to us on Whatsapp at:</div>
-          <TextLink url="https://wa.link/lz09jr" name="+234 802 697 8647" target="_black"/>
+          <TextLink
+            url="https://wa.link/lz09jr"
+            name="+234 802 697 8647"
+            target="_black"
+          />
         </div>
-        <FormInputGroup class="tablet:text-left text-center">
-          <FormLabel id="name" title="Name" />
-          <FormInput for="name" />
-        </FormInputGroup>
-        <FormInputGroup class="tablet:text-left text-center">
-          <FormLabel id="email" title="Email Address" />
-          <FormInput type="email" for="email" />
-        </FormInputGroup>
-        <FormInputGroup class="tablet:text-left text-center">
-          <FormLabel id="subject" title="Subject" />
-          <FormInput for="subject" />
-        </FormInputGroup>
-        <FormInputGroup class="tablet:text-left text-center">
-          <FormLabel id="message" title="Message" />
-          <FormTextarea id="message" rows="4" />
-        </FormInputGroup>
+        <!-- Name -->
+        <FormInput
+          for="name"
+          name="name"
+          label="Full Name"
+          :api-error-message="apiErrors?.name ? apiErrors?.name[0] : undefined"
+        />
+        <!-- Email Address -->
+        <FormInput
+          type="email"
+          for="email"
+          name="email"
+          label="Email Address"
+          :api-error-message="
+            apiErrors?.email ? apiErrors?.email[0] : undefined
+          "
+        />
+        <!-- Subject -->
+        <FormInput for="subject" name="subject" label="Subject" />
+        <!-- Message -->
+        <FormTextarea id="message" rows="4" name="message" label="Message" />
         <Button>Send Message</Button>
       </form>
     </div>

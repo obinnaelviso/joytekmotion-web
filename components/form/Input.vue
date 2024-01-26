@@ -15,9 +15,25 @@ const inputClass = computed(() => {
     "ease-in-out",
   ];
 });
+
+const labelClass = computed(() => {
+  return ["block", "text-gray-700", "text-sm", "mb-2"];
+});
+const props = defineProps<{
+  name: string;
+  apiErrorMessage?: string;
+  label?: string;
+}>();
+const { value, errorMessage } = useField(() => props.name);
 </script>
+
 <template>
-    <input
-      :class="inputClass"
-    />
+  <FormInputGroup class="tablet:text-left text-center">
+    <label :class="labelClass" v-if="label" :for="name">{{ label }}</label>
+    <input :class="inputClass" v-model="value" :name="name" :id="name" />
+    <small class="text-red-600" v-if="errorMessage">{{ errorMessage }}</small>
+    <small class="text-red-600" v-else-if="apiErrorMessage">{{
+      apiErrorMessage
+    }}</small>
+  </FormInputGroup>
 </template>

@@ -1,3 +1,4 @@
 {
-  "versionlens.suggestions.showOnStartup": true
+  "versionlens.suggestions.showOnStartup": true,
+  "CodeGPT.apiKey": "CodeGPT Plus Beta"
 }

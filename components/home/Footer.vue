@@ -36,6 +36,7 @@ const { companyName } = useRuntimeConfig().public;
               type="email"
               placeholder="Enter your email"
               class="laptop:mb-0 mb-3"
+              name="email"
             />
             <Button type="submit" class="laptop:ml-2"> Subscribe </Button>
           </form>

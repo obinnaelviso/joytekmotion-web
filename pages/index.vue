@@ -8,5 +8,6 @@
       <HomeWhatWeDo />
       <HomeContactUs />
     </Container>
+    <UNotifications />
   </div>
 </template>
