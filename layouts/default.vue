@@ -1,6 +1,8 @@
 <script lang="ts" setup>
 import logo from "@/assets/images/logo.png"
 const { appName } = useRuntimeConfig().public;
+import { SpeedInsights } from "@vercel/speed-insights/vue";
+const environment = process.env.NODE_ENV;
 useHead({
   titleTemplate: (title?: string) =>
     !title ? `Welcome to ${appName}` : `${title} - ${appName}`,
@@ -20,6 +22,7 @@ useHead({
 </script>
 <template>
   <div>
+    <SpeedInsights v-if="environment === 'production'" />
     <header>
       <!-- Navbar -->
       <Navbar />
