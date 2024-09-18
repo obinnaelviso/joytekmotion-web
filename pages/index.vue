@@ -6,6 +6,7 @@
     <HomeWhoWeAre />
     <Container>
       <HomeWhatWeDo />
+      <HomeOurProjects />
       <HomeContactUs />
     </Container>
     <UNotifications />

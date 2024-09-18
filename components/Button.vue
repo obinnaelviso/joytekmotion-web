@@ -11,6 +11,10 @@ const props = defineProps({
     default: "md",
     validator: (value: string) => ["sm", "md", "lg", "xl"].includes(value),
   },
+  loading: {
+    type: Boolean,
+    default: false
+  }
 });
 
 const buttonClasses = computed(() => {
