@@ -1,7 +1,7 @@
 <script lang="ts" setup>
-import freelanceBgImg from "@/assets/images/slider/hero/freelance-community-bg.jpg"
-import javaBgImg from "@/assets/images/slider/hero/java-bg.jpg"
-import ubuntuBgImg from "@/assets/images/slider/hero/ubuntu-bg.jpg"
+import freelanceBgImg from "/images/slider/hero/freelance-community-bg.jpg"
+import javaBgImg from "/images/slider/hero/java-bg.jpg"
+import ubuntuBgImg from "/images/slider/hero/ubuntu-bg.jpg"
 const slides = [
   {
     image: freelanceBgImg,

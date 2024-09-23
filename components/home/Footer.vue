@@ -7,7 +7,7 @@ const { companyName } = useRuntimeConfig().public;
     <Container>
       <div class="grid grid-cols-12 gap-5">
         <div class="tablet:col-span-3 col-span-12 hidden tablet:block">
-          <img src="@/assets/images/logo.png" class="w-24 h-24" />
+          <img src="/images/logo.png" class="w-24 h-24" />
           <p>
             We turn that big idea of yours into websites, apps, startups,
             scripts, infrastructures, services and more.

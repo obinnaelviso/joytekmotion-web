@@ -12,7 +12,7 @@ const {title, backgroundImage, description} = defineProps({
     <div class="absolute inset-0 bg-black opacity-70"></div>
     <!-- Center -->
     <div class="absolute bottom-5 left-5">
-      <Heading type="h1" :name="title" class="text-white"/>
+      <Heading type="h1" :name="title" class="text-white mb-2"/>
       <p class="text-gray-300">{{ description }}</p>
     </div>
   </div>

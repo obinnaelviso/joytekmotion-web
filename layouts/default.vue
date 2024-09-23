@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import logo from "@/assets/images/logo.png"
+import logo from "/images/logo.png"
 const { appName } = useRuntimeConfig().public;
 import { SpeedInsights } from "@vercel/speed-insights/vue";
 const environment = process.env.NODE_ENV;

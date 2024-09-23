@@ -24,7 +24,7 @@
     >
       <SwiperSlide>
         <img
-          src="@/assets/images/slider/stack/github.png"
+          src="/images/slider/stack/github.png"
           alt="github logo"
           class="h-28 m-auto"
           height="90"
@@ -32,28 +32,28 @@
       </SwiperSlide>
       <SwiperSlide>
         <img
-          src="@/assets/images/slider/stack/java.png"
+          src="/images/slider/stack/java.png"
           alt="java logo"
           class="h-32 m-auto"
         />
       </SwiperSlide>
       <SwiperSlide>
         <img
-          src="@/assets/images/slider/stack/php.png"
+          src="/images/slider/stack/php.png"
           alt="php logo"
           class="h-32 m-auto"
         />
       </SwiperSlide>
       <SwiperSlide>
         <img
-          src="@/assets/images/slider/stack/mysql.png"
+          src="/images/slider/stack/mysql.png"
           alt="mysql logo"
           class="h-24 m-auto"
         />
       </SwiperSlide>
       <SwiperSlide>
         <img
-          src="@/assets/images/slider/stack/html-css-js.png"
+          src="/images/slider/stack/html-css-js.png"
           alt="html-css-js logo"
           class="h-24 m-auto"
           height="90"
@@ -61,14 +61,14 @@
       </SwiperSlide>
       <SwiperSlide>
         <img
-          src="@/assets/images/slider/stack/cpanel.png"
+          src="/images/slider/stack/cpanel.png"
           alt="cpanel logo"
           class="mt-5"
         />
       </SwiperSlide>
       <SwiperSlide>
         <img
-          src="@/assets/images/slider/stack/python.png"
+          src="/images/slider/stack/python.png"
           alt="python logo"
           class="h-24 m-auto"
           height="90"
@@ -76,28 +76,28 @@
       </SwiperSlide>
       <SwiperSlide>
         <img
-          src="@/assets/images/slider/stack/laravel.png"
+          src="/images/slider/stack/laravel.png"
           alt="laravel logo"
           class="h-24 m-auto"
         />
       </SwiperSlide>
       <SwiperSlide>
         <img
-          src="@/assets/images/slider/stack/aws.png"
+          src="/images/slider/stack/aws.png"
           alt="aws logo"
           class="h-24 m-auto"
         />
       </SwiperSlide>
       <SwiperSlide>
         <img
-          src="@/assets/images/slider/stack/nginx.webp"
+          src="/images/slider/stack/nginx.webp"
           alt="nginx logo"
           class="mt-5"
         />
       </SwiperSlide>
       <SwiperSlide>
         <img
-          src="@/assets/images/slider/stack/kotlin.png"
+          src="/images/slider/stack/kotlin.png"
           alt=" logo"
           class="h-24 m-auto"
           height="90"
@@ -105,7 +105,7 @@
       </SwiperSlide>
       <SwiperSlide>
         <img
-          src="@/assets/images/slider/stack/vuejs.webp"
+          src="/images/slider/stack/vuejs.webp"
           alt="vuejs logo"
           class="h-24 m-auto"
           height="90"
@@ -113,35 +113,35 @@
       </SwiperSlide>
       <SwiperSlide>
         <img
-          src="@/assets/images/slider/stack/nodejs.png"
+          src="/images/slider/stack/nodejs.png"
           alt="nodejs logo"
           class="h-32 m-auto"
         />
       </SwiperSlide>
       <SwiperSlide>
         <img
-          src="@/assets/images/slider/stack/nuxtjs.png"
+          src="/images/slider/stack/nuxtjs.png"
           alt="nuxtjs logo"
           class="mt-5"
         />
       </SwiperSlide>
       <SwiperSlide>
         <img
-          src="@/assets/images/slider/stack/digitalocean.png"
+          src="/images/slider/stack/digitalocean.png"
           alt="digitalocean logo"
           class="h-32 m-auto"
         />
       </SwiperSlide>
       <SwiperSlide>
         <img
-          src="@/assets/images/slider/stack/flutter.png"
+          src="/images/slider/stack/flutter.png"
           alt="flutter logo"
           class="mt-5"
         />
       </SwiperSlide>
       <SwiperSlide>
         <img
-          src="@/assets/images/slider/stack/react.png"
+          src="/images/slider/stack/react.png"
           alt="react logo"
           class="h-24 m-auto"
           height="90"
@@ -149,14 +149,14 @@
       </SwiperSlide>
       <SwiperSlide>
         <img
-          src="@/assets/images/slider/stack/mongodb.png"
+          src="/images/slider/stack/mongodb.png"
           alt="mongodb logo"
           class="h-32 m-auto"
         />
       </SwiperSlide>
       <SwiperSlide>
         <img
-          src="@/assets/images/slider/stack/nextjs.png"
+          src="/images/slider/stack/nextjs.png"
           alt="nextjs logo"
           class="h-28 m-auto"
           height="90"
@@ -164,14 +164,14 @@
       </SwiperSlide>
       <SwiperSlide>
         <img
-          src="@/assets/images/slider/stack/spring-boot.png"
+          src="/images/slider/stack/spring-boot.png"
           alt="spring boot logo"
           class="h-32 m-auto"
         />
       </SwiperSlide>
       <SwiperSlide>
         <img
-          src="@/assets/images/slider/stack/vercel.png"
+          src="/images/slider/stack/vercel.png"
           alt="vercel logo"
           class="mt-5"
         />

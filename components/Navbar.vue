@@ -10,6 +10,10 @@ const menuLinks = [
     url: "/services",
   },
   {
+    name: "Projects",
+    url: "/projects",
+  },
+  {
     name: "About Us",
     url: "/about",
   },
@@ -71,7 +75,7 @@ const menuClasses = computed(() => {
       <!-- Logo -->
       <NuxtLink to="/">
         <img
-          src="@/assets/images/logo.png"
+          src="/images/logo.png"
           alt="joytekmotion-logo"
           class="w-16"
       /></NuxtLink>

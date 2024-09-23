@@ -1,6 +1,6 @@
 <script lang="ts" setup>
-import freelanceBgImg from "@/assets/images/slider/hero/freelance-community-bg.jpg";
-import logo from "@/assets/images/logo.png";
+import freelanceBgImg from "/images/slider/hero/freelance-community-bg.jpg";
+import logo from "/images/logo.png";
 
 const pageTitle = "About Us";
 const pageDescription =
