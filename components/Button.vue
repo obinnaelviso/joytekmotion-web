@@ -1,20 +1,14 @@
 <script lang="ts" setup>
-const props = defineProps({
-  variant: {
-    type: String,
-    default: "primary",
-    validator: (value: string) =>
-      ["primary", "secondary", "success", "warning", "danger"].includes(value),
-  },
-  size: {
-    type: String,
-    default: "md",
-    validator: (value: string) => ["sm", "md", "lg", "xl"].includes(value),
-  },
-  loading: {
-    type: Boolean,
-    default: false
-  }
+interface Props {
+  variant?: "primary" | "secondary" | "success" | "warning" | "danger" | "default";
+  size?: "sm" | "md" | "lg" | "xl";
+  loading?: boolean;
+}
+
+const props = withDefaults(defineProps<Props>(), {
+  variant: "primary",
+  size: "md",
+  loading: false,
 });
 
 const buttonClasses = computed(() => {
@@ -36,6 +30,7 @@ const buttonClasses = computed(() => {
       "text-sm": props.size === "sm",
       "text-lg": props.size === "lg",
       "text-xl": props.size === "xl",
+      "cursor-not-allowed opacity-50": props.loading,
     },
   ];
 });

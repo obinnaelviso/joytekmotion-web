@@ -2,7 +2,7 @@
 import logo from "/images/logo.png"
 const { appName } = useRuntimeConfig().public;
 import { SpeedInsights } from "@vercel/speed-insights/vue";
-const environment = process.env.NODE_ENV;
+const environment = import.meta.env.MODE;
 useHead({
   titleTemplate: (title?: string) =>
     !title ? `Welcome to ${appName}` : `${title} - ${appName}`,

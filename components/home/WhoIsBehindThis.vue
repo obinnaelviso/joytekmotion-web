@@ -5,10 +5,10 @@
       <!-- Round avatar -->
       <div class="flex tablet:flex-row flex-col justify-center p-10">
         <div class="rounded-full overflow-hidden border-4 border-purple-700 w-28 h-28 m-auto tablet:m-0">
-          <img
+          <NuxtImg
             class="w-full"
             src="https://avatars.githubusercontent.com/u/10047082?v=4"
-            alt="Avatar"
+            alt="Obinna Elvis Avatar"
           />
         </div>
         <!-- Social Media -->

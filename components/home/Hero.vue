@@ -1,27 +1,5 @@
 <script lang="ts" setup>
-import freelanceBgImg from "/images/slider/hero/freelance-community-bg.jpg"
-import javaBgImg from "/images/slider/hero/java-bg.jpg"
-import ubuntuBgImg from "/images/slider/hero/ubuntu-bg.jpg"
-const slides = [
-  {
-    image: freelanceBgImg,
-    image_alt: "laptop with monitor",
-    title: "We are a <span class='text-orange-300'>community of freelancers</span> who work together to get the job done.",
-    id: 0,
-  },
-  {
-    image: javaBgImg,
-    image_alt: "dark background with java logo at the bottom right corner",
-    title: "We <span class='text-orange-300'>build, fix and maintain</span> your websites, mobile and desktop applications for you.",
-    id: 1,
-  },
-  {
-    image: ubuntuBgImg,
-    image_alt: "dark background with ubuntu logo at the center",
-    title: "We ensure you spend less in <span class='text-orange-300'>server maintenance</span> while you make your profit.",
-    id: 2,
-  },
-];
+import { heroSlides } from "~/data/siteData";
 </script>
 <template>
   <Swiper
@@ -45,9 +23,9 @@ const slides = [
       },
     }"
   >
-    <SwiperSlide v-for="slide in slides" :key="slide.id">
+    <SwiperSlide v-for="slide in heroSlides" :key="slide.id">
       <div class="h-[35vh] laptop:h-[100vh] relative">
-        <img
+        <NuxtImg
           :src="slide.image"
           :alt="slide.image_alt"
           class="object-cover w-full h-full absolute top-0 left-0 -z-10"

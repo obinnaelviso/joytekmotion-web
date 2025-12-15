@@ -7,7 +7,7 @@ const {title, backgroundImage, description} = defineProps({
 </script>
 <template>
   <div class="relative h-52">
-    <img :src="backgroundImage" :alt="title" class="object-cover w-full h-full absolute top-0 left-0 -z-10" />
+    <NuxtImg :src="backgroundImage" :alt="title" class="object-cover w-full h-full absolute top-0 left-0 -z-10" />
     <!-- image overlay -->
     <div class="absolute inset-0 bg-black opacity-70"></div>
     <!-- Center -->

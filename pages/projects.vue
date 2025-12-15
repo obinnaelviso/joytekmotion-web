@@ -30,7 +30,7 @@ useHead({
           :key="index"
           :title="project.title"
           :description="project.description"
-          :status="project.status"
+          :projectStatus="project.status"
           :url="project.url"
           :githubUrl="project.githubUrl"
           :stackIcons="project.stackIcons"

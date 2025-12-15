@@ -19,9 +19,11 @@ type ContactFormErrors = {
 
 const toast = useToast();
 const apiErrors = useState<ContactFormErrors | null>();
+const config = useRuntimeConfig();
+
 const onSubmit = handleSubmit(async (values) => {
   apiErrors.value = null;
-  const data = await $fetch("http://joytekmotion-api.test/api/v1/contact-us", {
+  const data = await $fetch(`${config.public.apiBase}/contact-us`, {
     method: "POST",
     body: values,
     async onResponse({ response }) {
@@ -62,9 +64,9 @@ const onSubmit = handleSubmit(async (values) => {
           <Icon name="uil:whatsapp" class="mb-2 text-green-500" size="48" />
           <div class="font-bold">Say Hi to us on Whatsapp at:</div>
           <TextLink
-            url="https://wa.link/lz09jr"
-            name="+234 802 697 8647"
-            target="_black"
+            :url="config.public.contact.whatsapp"
+            :name="config.public.contact.phone"
+            target="_blank"
           />
         </div>
         <!-- Name -->

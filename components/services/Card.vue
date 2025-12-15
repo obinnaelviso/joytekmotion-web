@@ -21,6 +21,6 @@ const { title, servicesList, action } = defineProps({
           </li>
         </ul>
       </div>
-    <TextLink v-if="action" to="#" class="absolute bottom-5 right-5" name="Learn More" />
+    <TextLink v-if="action" url="#" class="absolute bottom-5 right-5" name="Learn More" />
   </div>
 </template>

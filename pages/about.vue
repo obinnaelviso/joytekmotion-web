@@ -38,7 +38,7 @@ useHead({
       <div class="my-20">
         <SectionTitle class="mb-5">Let's Dive Deeper</SectionTitle>
         <div class="grid grid-cols-1 laptop:grid-cols-3 gap-3">
-          <img :src="logo" alt="joytek motion logo" class="mx-auto" />
+          <NuxtImg :src="logo" alt="joytek motion logo" class="mx-auto" />
           <div class="col-span-2 flex flex-col gap-3 text-gray-500">
             <p>
               Joytek Motion was founded in 2017 with a vision to develop

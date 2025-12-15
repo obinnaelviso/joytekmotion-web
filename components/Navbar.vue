@@ -1,55 +1,6 @@
 <script setup lang="ts">
 const route = useRoute();
-const menuLinks = [
-  {
-    name: "Home",
-    url: "/",
-  },
-  {
-    name: "Services",
-    url: "/services",
-  },
-  {
-    name: "Projects",
-    url: "/projects",
-  },
-  {
-    name: "About Us",
-    url: "/about",
-  },
-];
-const socialIcons = [
-  {
-    icon: "uil:github",
-    url: "https://github.com/obinnaelviso",
-    class: ["hover:text-black"],
-  },
-  {
-    icon: "uil:facebook-f",
-    url: "https://facebook.com/joytekmotion",
-    class: ["hover:text-blue-500"],
-  },
-  {
-    icon: "uil:linkedin",
-    url: "https://linkedin.com/company/joytekmotion",
-    class: ["hover:text-sky-700"],
-  },
-  {
-    icon: "uil:twitter",
-    url: "https://twitter.com/joytekmotion",
-    class: ["hover:text-sky-400"],
-  },
-  {
-    icon: "cib:upwork",
-    url: "https://www.upwork.com/freelancers/~013e0288cb1c5abc47",
-    class: ["hover:text-green-500"],
-  },
-  {
-    icon: "jam:fiverr",
-    url: "https://fiverr.com/obinnaelviso",
-    class: ["hover:text-green-600"],
-  },
-];
+import { menuLinks, socialIcons } from "~/data/siteData";
 
 const isOpen = ref(false);
 
@@ -74,7 +25,7 @@ const menuClasses = computed(() => {
     >
       <!-- Logo -->
       <NuxtLink to="/">
-        <img
+        <NuxtImg
           src="/images/logo.png"
           alt="joytekmotion-logo"
           class="w-16"
@@ -103,6 +54,7 @@ const menuClasses = computed(() => {
             target="_blank"
             class="text-gray-500 transition-colors ease-in-out duration-500"
             :class="socialIcon.class"
+            :aria-label="`Visit our ${socialIcon.url} page`"
             ><Icon :name="socialIcon.icon"
           /></a>
         </li>
@@ -136,6 +88,7 @@ const menuClasses = computed(() => {
             target="_blank"
             class="text-gray-500 transition-colors ease-in-out duration-500"
             :class="socialIcon.class"
+            :aria-label="`Visit our ${socialIcon.url} page`"
             ><Icon :name="socialIcon.icon"
           /></a>
         </li>

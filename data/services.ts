@@ -1,4 +1,6 @@
-export const services: { title: string; servicesList: string[]; action: string }[] = [
+import type { Service } from "~/types";
+
+export const services: Service[] = [
   {
     title: "Web Development",
     servicesList: [

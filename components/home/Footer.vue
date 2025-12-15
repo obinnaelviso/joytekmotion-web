@@ -1,13 +1,14 @@
 <script lang="ts" setup>
 const currentYear = new Date().getFullYear();
-const { companyName } = useRuntimeConfig().public;
+const config = useRuntimeConfig();
+const { companyName } = config.public;
 </script>
 <template>
   <section class="border-t border-t-purple-500 py-10">
     <Container>
       <div class="grid grid-cols-12 gap-5">
         <div class="tablet:col-span-3 col-span-12 hidden tablet:block">
-          <img src="/images/logo.png" class="w-24 h-24" />
+          <NuxtImg src="/images/logo.png" class="w-24 h-24" />
           <p>
             We turn that big idea of yours into websites, apps, startups,
             scripts, infrastructures, services and more.
@@ -48,6 +49,7 @@ const { companyName } = useRuntimeConfig().public;
                 href="https://facebook.com/joytekmotion"
                 target="_blank"
                 class="text-blue-500"
+                aria-label="Visit our Facebook page"
                 ><Icon name="uil:facebook-f"
               /></a>
             </li>
@@ -56,6 +58,7 @@ const { companyName } = useRuntimeConfig().public;
                 href="https://linkedin.com/company/joytekmotion"
                 target="_blank"
                 class="text-sky-700"
+                aria-label="Visit our LinkedIn page"
                 ><Icon name="uil:linkedin"
               /></a>
             </li>
@@ -64,6 +67,7 @@ const { companyName } = useRuntimeConfig().public;
                 href="https://twitter.com/joytekmotion"
                 target="_blank"
                 class="text-sky-400"
+                aria-label="Visit our Twitter page"
                 ><Icon name="uil:twitter"
               /></a>
             </li>
@@ -72,14 +76,16 @@ const { companyName } = useRuntimeConfig().public;
                 href="https://instagram.com/joytekmotion"
                 target="_blank"
                 class="text-pink-600"
+                aria-label="Visit our Instagram page"
                 ><Icon name="uil:instagram"
               /></a>
             </li>
             <li>
               <a
-                href="https://wa.link/lz09jr"
+                :href="config.public.contact.whatsapp"
                 target="_blank"
                 class="text-green-500"
+                aria-label="Contact us on WhatsApp"
                 ><Icon name="uil:whatsapp"
               /></a>
             </li>
